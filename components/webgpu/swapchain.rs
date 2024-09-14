@@ -163,6 +163,7 @@ impl PresentationData {
 }
 
 impl crate::WGPU {
+    #[allow(clippy::too_many_arguments)]
     pub(crate) fn create_swapchain(
         &self,
         device_id: id::DeviceId,
