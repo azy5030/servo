@@ -37,7 +37,7 @@ pub fn get_decode_and_split_header_name(name: &str, headers: &HeaderMap) -> Opti
     // Step 1: Let value be the result of getting name from list.
     // Step 2: If value is null, then return null.
     // Step 3: Return the result of getting, decoding, and splitting value.
-    get_value_from_header_list(name, headers).map(|value| get_decode_and_split_header_value(value))
+    get_value_from_header_list(name, headers).map(get_decode_and_split_header_value)
 }
 
 /// <https://fetch.spec.whatwg.org/#header-value-get-decode-and-split>
