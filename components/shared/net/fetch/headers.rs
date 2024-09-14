@@ -93,7 +93,7 @@ pub fn get_decode_and_split_header_value(value: Vec<u8>) -> Vec<String> {
         temporary_value = String::new();
     }
 
-    return values;
+    values
 }
 
 /// <https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points>
